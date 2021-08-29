@@ -8,10 +8,10 @@
         <p v-if="project_id!=1">{{getProductName(project_id-1)}}</p>
       </div>
       <div class="next-btn__bg">
-        <router-link v-if="project_id==(project.length)"  to="/"></router-link>
-        <p v-if="project_id==(project.length)" >about</p>
-        <router-link v-if="project_id!=(project.length)" :to="'/project/'+(Number(project_id)+1)"></router-link>
-        <p v-if="project_id!=(project.length)">{{getProductName(Number(project_id)+1)}}</p>
+        <router-link v-if="project_id==(projects.length)"  to="/"></router-link>
+        <p v-if="project_id==(projects.length)" >contact</p>
+        <router-link v-if="project_id!=(projects.length)" :to="'/project/'+(Number(project_id)+1)"></router-link>
+        <p v-if="project_id!=(projects.length)">{{getProductName(Number(project_id)+1)}}</p>
       </div>
       <div class="page__cnt">
         <section>
@@ -130,6 +130,7 @@ export default {
   },
   mounted() {
     this.project_id = Number(this.$route.params.id);
+    this.projects = content.projects;
     this.project = content.projects.filter(p=>p.id==this.project_id)[0];
     if(!this.project){
       this.$router.push('/portfolio')
@@ -147,6 +148,7 @@ export default {
     return {
       project_id: 1,
       project: null,
+      projects: [],
       options: {
         rewind: true,
         width: 800,

@@ -43,7 +43,7 @@
     
     <div class="bg2">
     <transition name="maskimg">
-      <router-view></router-view>
+      <router-view :key="$route.path"></router-view>
     </transition>
     <div class="test-sib"></div>
     <div class="test-sib2"></div>
