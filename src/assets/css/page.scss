@@ -223,6 +223,7 @@
     }
     a:hover + p, p:hover {
         right: 50%;
+        white-space: nowrap;
         visibility: visible;
         opacity: 1;
         transition: all 0.2s ease-in;
@@ -304,6 +305,7 @@
     }
     a:hover + p, p:hover {
         left: 50%;
+        white-space: nowrap;
         visibility: visible;
         opacity: 1;
         transition: all 0.2s ease-in;

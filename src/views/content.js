@@ -25,7 +25,9 @@ export default {
       }, 
       {
         id: 2,
+        title: 'Alpha-Zero-2',
         about_project: `There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.  If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words`,
+        website_link: 'https://github.com/',
         github_link: ``,
         images: [
           'https://firebasestorage.googleapis.com/v0/b/sonic-harbor-236704.appspot.com/o/Projects%2FWeb-dev%2Falpha-zero%2Falpha-zero-win.png?alt=media&token=41e6081b-c3a2-494a-9d70-37530e3cfb4e',
@@ -39,8 +41,6 @@ export default {
           'Webpack',
           'Babel'
         ],
-        title: 'Alpha-Zero-2',
-        website_link: 'https://github.com/'
       },
     ]
 }

@@ -2,12 +2,16 @@
   <div>
     <div class="profile__page">
       <div class="prev-btn__bg">
-        <router-link to="/portfolio"></router-link>
-        <p>portfolio</p>
+        <router-link v-if="project_id==1" to="/portfolio"></router-link>
+        <p v-if="project_id==1">portfolio</p>
+        <router-link v-if="project_id!=1" :to="'/project/'+(project_id-1)"></router-link>
+        <p v-if="project_id!=1">{{getProductName(project_id-1)}}</p>
       </div>
       <div class="next-btn__bg">
-        <router-link to="/"></router-link>
-        <p>about</p>
+        <router-link v-if="project_id==(project.length)"  to="/"></router-link>
+        <p v-if="project_id==(project.length)" >about</p>
+        <router-link v-if="project_id!=(project.length)" :to="'/project/'+(Number(project_id)+1)"></router-link>
+        <p v-if="project_id!=(project.length)">{{getProductName(Number(project_id)+1)}}</p>
       </div>
       <div class="page__cnt">
         <section>
@@ -118,12 +122,19 @@ export default {
     Splide,
     SplideSlide,
   },
+  methods: {
+    getProductName(id){
+      let project = content.projects.filter(p=>p.id==id)[0] || {};
+      return project?.title || ''
+    }
+  },
   mounted() {
-    let p_id = this.$route.params.id;
-    this.project = content.projects.filter(p=>p.id==p_id)[0];
+    this.project_id = Number(this.$route.params.id);
+    this.project = content.projects.filter(p=>p.id==this.project_id)[0];
     if(!this.project){
       this.$router.push('/portfolio')
     }
+    console.log("Route Updated");
     $('.content').hover(function (){
         $(this).prev().addClass('active');
       },
@@ -134,6 +145,7 @@ export default {
   },
   data() {
     return {
+      project_id: 1,
       project: null,
       options: {
         rewind: true,
