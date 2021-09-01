@@ -11,22 +11,22 @@
   </div>
   <div class="contact__icons">
     <div class="items">
-      <a href="#">
+      <a href="https://github.com/fahim9898" target="_blank">
         <i class="fab fa-github"></i>
       </a>
       <div class="cst-tooltip">Github</div>
     </div>
     <div class="items">
-      <a href="#">
+      <a href="https://www.linkedin.com/in/fahim-sanghariyat-37132a17b/" target="_blank">
         <i class="fab fa-linkedin"></i>
       </a>
       <div class="cst-tooltip">Linked In</div>
     </div>
     <div class="items">
-      <a href="#">
-        <i class="fab fa-instagram"></i>
+      <a href="https://codepen.io/fahim-sanghariyat" target="_blank">
+        <i class="fab fa-codepen"></i>
       </a>
-      <div class="cst-tooltip">Instagram</div>
+      <div class="cst-tooltip">Codepen</div>
     </div>
     <div class="items nextBtn">
       <router-link to="/portfolio">
