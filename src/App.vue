@@ -42,12 +42,14 @@
     </div>
     
     <div class="bg2">
-    <transition name="maskimg">
+    <span class="transition-overlay" id="transition-id"></span>
+    <transition
+      @beforeEnter="beforeEnter"
+      @enter="enter"
+      @leave="leave"
+    >
       <router-view :key="$route.path"></router-view>
     </transition>
-    <div class="test-sib"></div>
-    <div class="test-sib2"></div>
-
     </div>
     <div class="loading-animation loading-active d-none">
     </div>
@@ -57,8 +59,12 @@
 <script>
 /*eslint-disable*/
 export default {
+  beforeMount() {
+    },
   mounted() {
-      let lastYPositonScroll = window.pageYOffset;
+    
+
+    let lastYPositonScroll = window.pageYOffset;
 
       let PositiveVal = function (val){
           if(val>=0) return val;
@@ -89,6 +95,31 @@ export default {
             }, 0);
         }
       })
+  },
+  methods: {
+    beforeEnter: function (el) {
+      el.style.opacity = 0
+    },
+    enter(el, done) {
+      setTimeout(() => {
+        el.style.opacity = 1
+          window.$('.transition-overlay').addClass('transition-out')
+          setTimeout(() => {
+            console.log('Leave Complete');
+            window.$('.transition-overlay').removeClass('transition-out')
+            done()
+          }, 1500);
+        // done()
+      }, 800);
+    },
+    leave(el, done) {
+      window.$('.transition-overlay').addClass('transition-enter')
+      setTimeout(() => {
+        console.log('Leave Complete');
+        window.$('.transition-overlay').removeClass('transition-enter')
+        done()
+      }, 800);
+    },
   }
 }
 </script>

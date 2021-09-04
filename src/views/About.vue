@@ -136,22 +136,27 @@ export default {
           blob.style.setProperty('--delay', -1 * (2 + Math.random() * 4) + 's');
           blob.setAttribute('data-speed', (10 * Math.random() - 5) )
       });
-
+      let mousemove = true
       document.addEventListener('mousemove', function(e){
+        if(mousemove != true) return 
         // let blobs = [].slice.call(document.querySelector('.blob'));
-        document.querySelectorAll('.blob').forEach(blob=>{
-          const speed = blob.getAttribute('data-speed');
-          const x = (window.innerWidth - e.pageX * speed)/100;
-          const y = (window.innerHeight - e.pageY * speed)/100;
-          blob.style.transform = `translateX(${x}px) translateY(${y}px)`;
-        })
-        document.querySelectorAll('.center').forEach(blob=>{
-          const speed = 5;
-          const x = (window.innerWidth - e.pageX * speed)/100;
-          const y = (window.innerHeight - e.pageY * speed)/100;
-          blob.style.transform = `translateX(calc(-50% + ${x}px)) translateY(calc(-50% + ${y}px))`;
-          blob.style.transform = `translateX(calc(-50% + ${x}px)) translateY(calc(-50% + ${y}px))`;
-        })
+        mousemove = false
+        setTimeout(() => {
+          mousemove = true
+          document.querySelectorAll('.blob').forEach(blob=>{
+            const speed = blob.getAttribute('data-speed');
+            const x = (window.innerWidth - e.pageX * speed)/100;
+            const y = (window.innerHeight - e.pageY * speed)/100;
+            blob.style.transform = `translateX(${x}px) translateY(${y}px)`;
+          })
+          document.querySelectorAll('.center').forEach(blob=>{
+            const speed = 5;
+            const x = (window.innerWidth - e.pageX * speed)/100;
+            const y = (window.innerHeight - e.pageY * speed)/100;
+            blob.style.transform = `translateX(calc(-50% + ${x}px)) translateY(calc(-50% + ${y}px))`;
+            blob.style.transform = `translateX(calc(-50% + ${x}px)) translateY(calc(-50% + ${y}px))`;
+          })
+          }, 5);
       });
 
       window.dispatchEvent(new Event('mousemove'));

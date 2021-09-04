@@ -4,7 +4,9 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-Vue.prototype.$db = {};
+let db = {}
+
+Vue.prototype.$db = db;
 Vue.prototype.$composePromise =  (...fns) => fns.reduce((f, g) => x => g(x).then(f)) 
 Vue.prototype.$compose = (...fns) => x => fns.reduce((y, f) => f(y) , x);
 Vue.prototype.$composeFirestore = (...fns) => fns.reduce((f, g) => x => {
