@@ -32,9 +32,6 @@ export default {
           'alpha-zero/alpha-zero-1',
           'alpha-zero/alpha-zero-2',
           'alpha-zero/alpha-zero-3',
-          // 'https://firebasestorage.googleapis.com/v0/b/sonic-harbor-236704.appspot.com/o/Projects%2FWeb-dev%2Falpha-zero%2Falpha-zero-win.png?alt=media&token=41e6081b-c3a2-494a-9d70-37530e3cfb4e',
-          // 'https://firebasestorage.googleapis.com/v0/b/sonic-harbor-236704.appspot.com/o/Projects%2FWeb-dev%2Falpha-zero%2FPicture1.png?alt=media&token=1559a0a3-415f-4352-843b-ebf5e6f417f4',
-          // 'https://firebasestorage.googleapis.com/v0/b/sonic-harbor-236704.appspot.com/o/Projects%2FWeb-dev%2Falpha-zero%2FPicture2.png?alt=media&token=e588b6f1-f2cd-4dde-8c80-ea7e4381d526'
         ],
         resorce: `<a target="_blank" class="highlight" href="https://jonathan-hui.medium.com/alphago-zero-a-game-changer-14ef6e45eba5">Basic about Alpha-Zero</a>
                   <br> <a target="_blank" class="highlight" href="https://www.youtube.com/watch?v=9XVmTMv2TOE">Tanmay Bakshi youtube video</a>`,
@@ -49,6 +46,22 @@ export default {
           'Tensorflow',
           'Flask',
           'Javascript'
+        ],
+      },
+      {
+        id: 'ui',
+        title: 'User Interface',
+        images: [
+          'ui/login1',
+        ],
+        tech_info: [
+          'CSS',
+          'SASS',
+          'Bootstrap',
+          'VueJS',
+          'ReactJS',
+          'Axios',
+          'Vanilla JS'
         ],
       },
     ]

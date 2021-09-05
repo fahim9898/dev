@@ -76,7 +76,7 @@ export default {
         return ([].indexOf.call(document.querySelector(el)?.classList || [], className ) == 0)? true : false;
       }
 
-      document.addEventListener('scroll', function (){
+      /* document.addEventListener('scroll', function (){
           let newY = window.pageYOffset;
           // console.log('ANIMAION', lastYPositonScroll, newY)
         if(hasClass('body', 'mobile') && PositiveVal(lastYPositonScroll - newY)> 400){
@@ -94,7 +94,7 @@ export default {
                 }
             }, 0);
         }
-      })
+      }) */
   },
   methods: {
     beforeEnter: function (el) {

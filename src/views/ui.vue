@@ -24,17 +24,10 @@
         <section class="project">
           <ul class="project__header">
             <li>
-             <a href="#" target="_blank" style="color: white;">
-              <div class="tilt-btn info">
-                <div class="tilt-btn__cnt"> <i class="mr-2 fa fa-globe-asia"></i> Visit The Website</div>
-                <span></span>
-              </div>
-              </a>
-              <div></div>
             </li>
             <li>
               <div class="social__media__icon">
-                <a href="#" target="_blank">
+                <a href="https://www.github.com/fahim9898" target="_blank">
                   <img
                     src="../assets/img/icons8-github.svg"
                     alt=""
@@ -43,24 +36,45 @@
               </div>
             </li>
           </ul>
-
           <div class="porfolio__project pt-2">
             <div class="porolio__porject__cnt">
               <div class="row">
                 <div class="project__item col-12 mb-4">
-                  <div class="main">
-                    <div class="bar">
-                      <h1>UI </h1>
-                      <i></i>
+                  <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/login1.png" />
                     </div>
-                    <splide :options="options">
-                      <splide-slide>
-                        <img
-                          class="img-height__single-project"
-                          :src="require( `@/views/assets/${'junubi/junubi1'}.png`)"
-                        />
-                      </splide-slide>
-                    </splide>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/login2.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/al-chat.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/jb1.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/jb2.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/jb3.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/jb4.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/my-reminder.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/Dashboard2.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/login3.png" />
+                    </div>
+                    <div class="grid-item">
+                      <img src="@/views/assets/ui/jb5.png" />
+                    </div>
                   </div>
                 </div>
               </div>
@@ -96,7 +110,25 @@ export default {
     }
   },
   mounted() {
-    console.log("Route Updated");
+    $(document).ready(function (){
+
+      
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+      });
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress( function() {
+        $grid.masonry();
+      }); 
+      })
+
+    // var images = wall.container.find('.brick');
+    // images.find('img').load(function() {
+    //   wall.fitWidth();
+    // });
+
     $('.content').hover(function (){
         $(this).prev().addClass('active');
       },
@@ -120,4 +152,52 @@ export default {
   },
 };
 </script>
+
+<style scoped lang="scss">
+  /* ---- grid ---- */
+ .project{ 
+    position: relative;
+    width: 75vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.grid {
+  background: transparent;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+  position: relative;
+  width: 33.333%;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+.grid-item-w2 {
+  width: 66.666%;
+}
+
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  padding: 5px;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+</style>
 
