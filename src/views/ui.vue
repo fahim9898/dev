@@ -6,7 +6,7 @@
         <p>portfolio</p>
       </div>
       <div class="next-btn__bg">
-        <router-link to="/"></router-link>
+        <router-link to="/contact"></router-link>
         <p>contact</p>
       </div>
       <div class="page__cnt">

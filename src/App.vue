@@ -36,7 +36,7 @@
           <i></i>
           <i></i>
           <p>Contact</p>
-          <a href="#"></a>
+          <router-link to="/contact"></router-link>
         </div>
       </div>
     </div>
