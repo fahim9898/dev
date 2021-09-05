@@ -61,7 +61,7 @@
                       <splide-slide v-for='img in project.images' :key="img">
                         <img
                           class="img-height__single-project"
-                          :src="img"
+                          :src="require( `@/views/assets/${img}.png`)"
                         />
                       </splide-slide>
                     </splide>

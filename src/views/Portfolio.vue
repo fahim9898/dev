@@ -34,7 +34,8 @@
                       <h1>{{project.title}}</h1>
                       <i></i>
                     </div>
-                    <img :src="project.images[0]" alt="" srcset="">
+                    <img 
+                      :src="require( `@/views/assets/${project.images[0]}.png`)">
                     <div class="project__overlay">
                         <div class="project__overlay__cnt">
                             <div v-for="tech in project.tech_info" :key="tech">{{tech}}</div>
