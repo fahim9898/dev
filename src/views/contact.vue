@@ -76,14 +76,6 @@
               </a>
               <div class="cst-tooltip">Codepen</div>
             </div>
-            <div class="items nextBtn">
-              <router-link to="/portfolio">
-                <a href="#">
-                  <i class="fas fa-chevron-right"></i>
-                </a>
-                <div class="cst-tooltip">Portfolio</div>
-              </router-link>
-            </div>
           </div>
         </section>
       </div>
