@@ -22,9 +22,38 @@ export default {
             'Jplayer'
         ],
         resorce: `Link: <a target="_blank" class="highlight" href="https://sudosounds.net/">Weblink</a>`,
-      }, 
+      },
       {
         id: 2,
+        title: 'Web Simulations',
+        website_link: '',
+        github_link: `https://github.com/fahim9898/simulations`,
+        images: [
+          'simulations/1',
+          'simulations/2',
+          'simulations/3',
+          'simulations/4',
+          'simulations/5',
+        ],
+        gifs: [
+          'simulations/dopler2',
+          'simulations/math',
+          'simulations/presure',
+        ],
+        resorce: ``,
+        sort_description: `Understand any topic is the best way by interacting. That's why we make simulations for the students.`,
+        about_project: `We make simulations on the web which contain interactive buttons, instructions, multiple questions, hints, and exercises. For the developing simulations, we use HTML, CSS, javascript & p5Js.
+        <br><br> We make simulations base on the 9th to 12th grade school book chapters. Students can learn from simulation by playing a. This thing can also help a teacher.
+        `,
+        tech_info: [
+          'HTML',
+          'CSS',
+          'Javascript',
+          'p5Js'
+        ],
+      },
+      {
+        id: 3,
         title: 'Alpha-Zero',
         website_link: 'https://github.com/fahim9898/alpha_zero',
         github_link: `https://github.com/fahim9898/alpha_zero`,
@@ -65,4 +94,4 @@ export default {
         ],
       },
     ]
-}
+  }

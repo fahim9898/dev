@@ -70,6 +70,28 @@
               </div>
             </div>
           </div>
+          <div class="porfolio__project pt-2" v-if="project.gifs">
+            <div class="porolio__porject__cnt">
+              <div class="row">
+                <div class="project__item col-12 mb-4">
+                  <div class="main">
+                    <div class="bar">
+                      <h1>{{project.title}} Gifs</h1>
+                      <i></i>
+                    </div>
+                    <splide :options="options">
+                      <splide-slide v-for='gif in project.gifs' :key="gif">
+                        <img
+                          class="img-height__single-project"
+                          :src="require( `@/views/assets/${gif}.gif`)"
+                        />
+                      </splide-slide>
+                    </splide>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
         <div class="project__description__sections">
         <section class="project__description">
@@ -90,7 +112,7 @@
             </ul>
           </div>
         </section>
-        <section class="project__description">
+        <section v-if="project.resorce" class="project__description">
           <span class="header highlight">Resource</span>
           <div class="content">
             <ul>
