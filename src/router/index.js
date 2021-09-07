@@ -21,12 +21,12 @@ const routes = [
     component: ()=>import('../views/Portfolio.vue')
   },
   {
-    path: '/project/ui',
+    path: '/portfolio/ui',
     name: 'Project',
     component: ()=>import('../views/ui.vue')
   },
   {
-    path: '/project/:id',
+    path: '/portfolio/:id',
     name: 'Project',
     component: ()=>import('../views/Project.vue')
   }

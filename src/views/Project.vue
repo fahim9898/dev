@@ -4,13 +4,13 @@
       <div class="prev-btn__bg">
         <router-link v-if="project_id==1" to="/portfolio"></router-link>
         <p v-if="project_id==1">portfolio</p>
-        <router-link v-if="project_id!=1" :to="'/project/'+(project_id-1)"></router-link>
+        <router-link v-if="project_id!=1" :to="'/portfolio/'+(project_id-1)"></router-link>
         <p v-if="project_id!=1">{{getProductName(project_id-1)}}</p>
       </div>
       <div class="next-btn__bg">
-        <router-link v-if="project_id==(projects.length - 1)"  to="/project/ui"></router-link>
+        <router-link v-if="project_id==(projects.length - 1)"  to="/portfolio/ui"></router-link>
         <p v-if="project_id==(projects.length - 1)" >UI</p>
-        <router-link v-if="project_id!=(projects.length - 1)" :to="'/project/'+(Number(project_id)+1)"></router-link>
+        <router-link v-if="project_id!=(projects.length - 1)" :to="'/portfolio/'+(Number(project_id)+1)"></router-link>
         <p v-if="project_id!=(projects.length - 1)">{{getProductName(Number(project_id)+1)}}</p>
       </div>
       <div class="page__cnt">

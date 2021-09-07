@@ -28,7 +28,7 @@
           <div class="porolio__porject__cnt">
             <div class="row">
               <div v-for="project in projects" :key="project.id" class="project__item col-md-6 col-12 mb-4">
-                  <router-link :to="'/project/'+project.id">
+                  <router-link :to="'/portfolio/'+project.id">
                   <div class="main">
                     <div class="bar">
                       <h1>{{project.title}}</h1>
