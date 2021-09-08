@@ -53,7 +53,7 @@ export default {
         ],
       },
       {
-        id: 4,
+        id: 3,
         title: 'Claveto( Medical )',
         website_link: 'https://www.claveto.com/',
         github_link: ``,
@@ -83,7 +83,7 @@ export default {
         ],
       },
       {
-        id: 5,
+        id: 4,
         title: 'Alpha-Zero',
         website_link: 'https://github.com/fahim9898/alpha_zero',
         github_link: `https://github.com/fahim9898/alpha_zero`,
