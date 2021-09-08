@@ -2,26 +2,35 @@ export default {
     projects:[
       {
         id: 1,
-        title: 'Junubi Tunes',
-        sort_description: `<span class="highlight"> Junubi Tunes </span> is amazing music application. For listening top trending songs all around the world`,
-        website_link: 'https://sudosounds.net/',
+        title: 'Chat Application',
+        sort_description: `The purpose of the <span class="highlight"> chat application </span>is to allow users be able to the chat with each other`,
+        website_link: '',
         github_link: ``,
         images: [
-          'junubi/junubi1',
-          'junubi/junubi2',
-          'junubi/junubi3',
-          'junubi/junubi4'
+          'chat/1',
+          'chat/2',
+          'chat/3',
+          'chat/4',
+          'chat/5',
+          'chat/6',
+          'chat/7',
+          'chat/8',
+          'chat/9',
+          'chat/10',
+          'chat/11',
+          'chat/12',
+          'chat/13',
         ],
-        about_project: `Junubi Tunes is music application for Web and Mobile users. In which have latest songs, Albums, Artist, Genres, Playlists and lots of features.
-        <br><br>
-        Junubi Tunes is music application for Web and Mobile users. In which have latest songs, Albums, Artist, Genres, Playlists and lots of features.`,
+        about_project: `The application purpose is that users can easily chat with each other within same the organizations. This application has so many functionalities
+        User create/edit/delete, Admin, Group create/edit/update, send images/videos, ctr+v paste images, preview images, reply message, tag users and message delete/delete from everyone`,
         tech_info: [
-            'Laravel',
-            'SCSS',
-            'Bootrsrap',
-            'Jplayer'
+            'VueJs',
+            'Electron Js',
+            'Firebase',
+            'HTML',
+            'SASS'
         ],
-        resorce: `Link: <a target="_blank" class="highlight" href="https://sudosounds.net/">Weblink</a>`,
+        resorce: `Electron JS: <a target="_blank" class="highlight" href="https://www.electronjs.org/">Link</a>`,
       },
       {
         id: 2,
@@ -84,6 +93,29 @@ export default {
       },
       {
         id: 4,
+        title: 'Junubi Tunes',
+        sort_description: `<span class="highlight"> Junubi Tunes </span> is amazing music application. For listening top trending songs all around the world`,
+        website_link: 'https://sudosounds.net/',
+        github_link: ``,
+        images: [
+          'junubi/junubi1',
+          'junubi/junubi2',
+          'junubi/junubi3',
+          'junubi/junubi4'
+        ],
+        about_project: `Junubi Tunes is music application for Web and Mobile users. In which have latest songs, Albums, Artist, Genres, Playlists and lots of features.
+        <br><br>
+        Junubi Tunes is music application for Web and Mobile users. In which have latest songs, Albums, Artist, Genres, Playlists and lots of features.`,
+        tech_info: [
+            'Laravel',
+            'SCSS',
+            'Bootrsrap',
+            'Jplayer'
+        ],
+        resorce: `Link: <a target="_blank" class="highlight" href="https://sudosounds.net/">Weblink</a>`,
+      },
+      {
+        id: 5,
         title: 'Alpha-Zero',
         website_link: 'https://github.com/fahim9898/alpha_zero',
         github_link: `https://github.com/fahim9898/alpha_zero`,
@@ -100,6 +132,8 @@ export default {
                         <br><br> During training alpha zero modal, Algorithm generates its dataset during run time base on the Monte Carlo tree search and policy evaluation. Also, for the support of web applications. I make rest API in a flask which takes Tic-Tac-Toe as input state and last player turn as input and return new action which contains the position of "X" or "O"..
                         `,
         tech_info: [
+          'Machine Learning',
+          'Reinforcement Learning',
           'Python',
           'Keras',
           'Tensorflow',
