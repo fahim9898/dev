@@ -1,14 +1,7 @@
 <template>
   <div>
     <div class="profile__page">
-      <div class="prev-btn__bg">
-        <router-link to="/portfolio"></router-link>
-        <p>portfolio</p>
-      </div>
-      <div class="next-btn__bg">
-        <router-link to="/contact"></router-link>
-        <p>contact</p>
-      </div>
+      
       <div class="page__cnt">
         <section>
           <div class="portfolio">
@@ -92,6 +85,14 @@
           <a class="highlight" href="#"> sanghariyatfahim99@gmail.com </a>
         </p>
       </section>
+      <div class="prev-btn__bg">
+        <router-link to="/portfolio"></router-link>
+        <p>portfolio</p>
+      </div>
+      <div class="next-btn__bg">
+        <router-link to="/contact"></router-link>
+        <p>contact</p>
+      </div>
     </div>
   </div>
 </template>

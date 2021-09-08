@@ -1,13 +1,6 @@
 <template>
   <div>
-      <div class="next-btn__bg">
-         <router-link to="/contact"></router-link>
-        <p>contact</p>
-      </div>
-      <div class="prev-btn__bg">
-        <router-link to="/"></router-link>
-        <p>about</p>
-      </div>
+      
       <div class="page__cnt">
         <section>
           <div class="portfolio">
@@ -57,6 +50,14 @@
           </a>
         </p>
       </section>
+      <div class="next-btn__bg">
+         <router-link to="/contact"></router-link>
+        <p>contact</p>
+      </div>
+      <div class="prev-btn__bg">
+        <router-link to="/"></router-link>
+        <p>about</p>
+      </div>
   </div>
 </template>
 
