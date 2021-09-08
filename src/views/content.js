@@ -53,7 +53,37 @@ export default {
         ],
       },
       {
-        id: 3,
+        id: 4,
+        title: 'Claveto( Medical )',
+        website_link: 'https://www.claveto.com/',
+        github_link: ``,
+        images: [
+          'claveto/5',
+          'claveto/1',
+          'claveto/2',
+          'claveto/3',
+          'claveto/4',
+          'claveto/6',
+          'claveto/7',
+          'claveto/8',
+          'claveto/9',
+          'claveto/10',
+        ],
+        resorce: ``,
+        sort_description: `Claveto provide online mediacal services. We're dedicated to giving you the very best of our services, with a focus on medical consultation. `,
+        about_project: `Claveto provides online medical services. Claveto has the best doctors and advanced consultation. Which allow a patient to book doctor or lab appointment directly from web and mobile. Calveto provides online and clinic consultation services for a patient. Online consultation users directly communicate with a doctor by mobile application. Claveto has some amazing features like, Find doctors who are nearest to users based on location. 
+        <br> For manage application we build three admin panel 1) Claveto Team 2) Doctor 3) Clinic. `,
+        tech_info: [
+          'Laravel',
+          'Html',
+          'Javascript',
+          'SASS',
+          'cron job',
+          'Jquery'
+        ],
+      },
+      {
+        id: 5,
         title: 'Alpha-Zero',
         website_link: 'https://github.com/fahim9898/alpha_zero',
         github_link: `https://github.com/fahim9898/alpha_zero`,
