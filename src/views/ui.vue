@@ -46,6 +46,9 @@
                       <img src="@/views/assets/ui/login1.png" />
                     </div>
                     <div class="grid-item">
+                      <img src="@/views/assets/ui/landing1.png" />
+                    </div>
+                    <div class="grid-item">
                       <img src="@/views/assets/ui/login2.png" />
                     </div>
                     <div class="grid-item">
@@ -64,7 +67,7 @@
                       <img src="@/views/assets/ui/jb4.png" />
                     </div>
                     <div class="grid-item">
-                      <img src="@/views/assets/ui/my-reminder.png" />
+                      <img src="@/views/assets/ui/my-reminder2.png" />
                     </div>
                     <div class="grid-item">
                       <img src="@/views/assets/ui/Dashboard2.png" />
