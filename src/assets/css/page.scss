@@ -170,7 +170,7 @@
 
     a {
         position: relative;
-        z-index: 2;
+        z-index: 999;
         width: 80px;
         height: 60px;
         &::after{
@@ -252,7 +252,7 @@
 
     a {
         position: relative;
-        z-index: 2;
+        z-index: 999;
         width: 80px;
         height: 60px;
         &::after{

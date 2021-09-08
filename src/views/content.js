@@ -25,6 +25,7 @@ export default {
         User create/edit/delete, Admin, Group create/edit/update, send images/videos, ctr+v paste images, preview images, reply message, tag users and message delete/delete from everyone`,
         tech_info: [
             'VueJs',
+            'Type Script',
             'Electron Js',
             'Firebase',
             'HTML',
