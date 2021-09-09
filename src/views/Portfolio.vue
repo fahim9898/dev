@@ -10,7 +10,7 @@
               </span>
             </div>
             <div class="portfolio__sub-header">
-              From Web Components and UI/UX animations to <span class="highlight"> React.JS, Redux, Vue.JS, and Node.JS. </span> <span class="highlight"></span>  Check out my latest web software development portfolio projects.
+              From Web Components and UI/UX animations to <span class="highlight"> React.JS, Redux, Vue.JS, Vuex, and Node.JS. </span> <span class="highlight"></span>  Check out my latest web software development portfolio projects.
             </div>
           </div>
         </section>
