@@ -41,19 +41,9 @@
           </div>
         </section>
         <section class="mt-5">
-          <div class="portfolio">
-            <div class="portfolio__header">
-              <span class="highlight">
-                technology stack
-              </span>
-            </div>
-            <div class="portfolio__sub-header">
-              My technical background & skills
-            </div>
-          </div>
           <h3 class="heading mt-5">Everyday Toolkit</h3>
           <div class="logos">
-            <img class=" lazyloaded white-bg" alt="JavaScript" src="@/assets/img/logos/nodejs.svg">
+            <img class=" lazyloaded white-bg" alt="Node JS" src="@/assets/img/logos/nodejs.svg">
             <img class=" lazyloaded" alt="JavaScript" src="@/assets/img/logos/javascript.svg">
             <img class=" lazyloaded" alt="HTML5" src="@/assets/img/logos/html5.svg">
             <img class=" lazyloaded" alt="CSS3" src="@/assets/img/logos/css3.svg">
@@ -61,6 +51,7 @@
             <img class=" lazyloaded" alt="React" src="@/assets/img/logos/react.svg">
             <img class=" lazyloaded" alt="TypeScript" src="@/assets/img/logos/typescript.svg">
             <img class=" lazyloaded" alt="Sass" src="@/assets/img/logos/sass.svg">
+            <img class=" lazyloaded" alt="Express Js" src="@/assets/img/logos/express.jpg">
           </div>
           <h3 class="heading mt-5">Supporting Power Pack</h3>
           <div class="logos">
