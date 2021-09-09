@@ -16,7 +16,7 @@
         </section>
         <section class="porfolio__project mt-5">
           <div class="portfolio__project__header mb-4">
-            show all projects
+            Love to create things <i class="fa fa-heart"></i>
           </div>
           <div class="porolio__porject__cnt">
             <div class="row">
@@ -38,6 +38,48 @@
                   </router-link>
               </div>
             </div>
+          </div>
+        </section>
+        <section class="mt-5">
+          <div class="portfolio">
+            <div class="portfolio__header">
+              <span class="highlight">
+                technology stack
+              </span>
+            </div>
+            <div class="portfolio__sub-header">
+              My technical background & skills
+            </div>
+          </div>
+          <h3 class="heading mt-5">Everyday Toolkit</h3>
+          <div class="logos">
+            <img class=" lazyloaded white-bg" alt="JavaScript" src="@/assets/img/logos/nodejs.svg">
+            <img class=" lazyloaded" alt="JavaScript" src="@/assets/img/logos/javascript.svg">
+            <img class=" lazyloaded" alt="HTML5" src="@/assets/img/logos/html5.svg">
+            <img class=" lazyloaded" alt="CSS3" src="@/assets/img/logos/css3.svg">
+            <img class=" lazyloaded" alt="Vue" src="@/assets/img/logos/vue.png">
+            <img class=" lazyloaded" alt="React" src="@/assets/img/logos/react.svg">
+            <img class=" lazyloaded" alt="TypeScript" src="@/assets/img/logos/typescript.svg">
+            <img class=" lazyloaded" alt="Sass" src="@/assets/img/logos/sass.svg">
+          </div>
+          <h3 class="heading mt-5">Supporting Power Pack</h3>
+          <div class="logos">
+            <img class=" lazyloaded" alt="webpack" src="@/assets/img/logos/webpack.png">
+            <img class=" lazyloaded white-bg" alt="git" src="@/assets/img/logos/git.svg">
+            <img class=" lazyloaded white-bg" alt="github" src="@/assets/img/logos/github.png">
+            <img class=" lazyloaded" alt="bootstrap" src="@/assets/img/logos/bootstrap.svg">
+            <img class=" lazyloaded white-bg" alt="jquery" src="@/assets/img/logos/jquery.png">
+            <img class=" lazyloaded" alt="eslint" src="@/assets/img/logos/eslint.png">
+            <img class=" lazyloaded" alt="Github Action" src="@/assets/img/logos/gh_action.png">
+            <img class=" lazyloaded" alt="GraphQL" src="@/assets/img/logos/graphql.png">
+            <img class=" lazyloaded" alt="babel" src="@/assets/img/logos/babel.png">
+            <img class=" lazyloaded white-bg" alt="Sass" src="@/assets/img/logos/feathers.png">
+          </div>
+          <h3 class="heading mt-5">Learning In progress</h3>
+          <div class="logos">
+            <img class=" lazyloaded" alt="redux" src="@/assets/img/logos/redux.png">
+            <img class=" lazyloaded" alt="loopback" src="@/assets/img/logos/loopback.png">
+            <img class=" lazyloaded" alt="loopback" src="@/assets/img/logos/nest.svg">
           </div>
         </section>
       </div>
@@ -71,3 +113,21 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.logos img {
+    height: auto;
+    width: 100px;
+    margin: 2rem;
+}
+.heading {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.white-bg {
+  background-color: white;
+  padding: 6px;
+  transform: scale(1.5);
+  border-radius: 4px;
+}
+</style>
