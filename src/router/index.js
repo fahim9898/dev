@@ -26,6 +26,11 @@ const routes = [
     component: ()=>import('../views/ui.vue')
   },
   {
+    path: '/portfolio/animation',
+    name: 'Project',
+    component: ()=>import('../views/animation.vue')
+  },
+  {
     path: '/portfolio/:id',
     name: 'Project',
     component: ()=>import('../views/Project.vue')

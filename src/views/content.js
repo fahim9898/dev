@@ -158,5 +158,20 @@ export default {
           'Vanilla JS'
         ],
       },
+      {
+        id: 'animation',
+        title: 'Animation',
+        website_link: 'https://codepen.io/fahim-sanghariyat',
+        images: [
+          'animation/1',
+        ],
+        tech_info: [
+          'CSS',
+          'SASS',
+          'HTML',
+          'Javascript',
+          'canvas',
+        ],
+      },
     ]
   }

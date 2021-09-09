@@ -3,7 +3,7 @@
     <div class="profile__page">
       
       <div class="page__cnt">
-        <section>
+        <section class="project">
           <div class="portfolio">
             <div class="portfolio__header">
               <span class="highlight" id="pos-1"> User Interface</span>
@@ -87,11 +87,11 @@
       </section>
       <div class="prev-btn__bg">
         <router-link to="/portfolio"></router-link>
-        <p>portfolio</p>
+        <p>Portfolio</p>
       </div>
       <div class="next-btn__bg">
-        <router-link to="/contact"></router-link>
-        <p>contact</p>
+        <router-link to="/portfolio/animation"></router-link>
+        <p>Animation</p>
       </div>
     </div>
   </div>
