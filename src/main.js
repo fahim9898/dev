@@ -20,7 +20,7 @@ Vue.prototype.$composeFirestore = (...fns) => fns.reduce((f, g) => x => {
     return f(gx, y);
   }
 }) 
-
+console.log("test");
 Vue.prototype.$composeFirestore2 =  (...fns) => fns.reduceRight((f, g) => (x, y) => {
   let gxy = g(x, y);
   if(gxy?.get)
