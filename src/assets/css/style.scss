@@ -74,14 +74,14 @@ body{
     width: 100vw;
     height: 100vh;
     background-color: #333333;
-    z-index: 999;
+    z-index: 1000;
     font-family: 'Archivo', sans-serif;
     transition: top 0.5s ease-out;
 
     .nav__icon {
         position: fixed;
         // width: 100%;
-        z-index: 99;
+        z-index: 1000;
         right: 5%;
         top: 20px;
         
