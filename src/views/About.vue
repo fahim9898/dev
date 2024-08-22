@@ -17,12 +17,6 @@
       <div class="cst-tooltip">Github</div>
     </div>
     <div class="items">
-      <a href="https://www.linkedin.com/in/fahim-sanghariyat-37132a17b/" target="_blank">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <div class="cst-tooltip">Linked In</div>
-    </div>
-    <div class="items">
       <a href="https://codepen.io/fahim-sanghariyat" target="_blank">
         <i class="fab fa-codepen"></i>
       </a>
